@@ -7,7 +7,7 @@
 <!-- Section containing all css and js links -->
 <?php include('includes/public/head_section.php'); ?>
 
-<title>LifeBlog | Sign up </title>
+<title>CSE | Sign up </title>
 
 </head>
 <body>
@@ -15,13 +15,13 @@
 <div class="container">
 
 <!-- Navbar -->
-	<?php include( ROOT_PATH . '/includes/public/navbar.php'); ?>
+	<?php include( ROOT_PATH . '/includes/navbar.php'); ?>
 <!-- // Navbar -->
 
 
 <div style="width: 40%; margin: 20px auto;">
 	<form method="post" action="register.php" >
-		<h2>Register on LifeBlog</h2>
+		<h2>Register </h2>
 		<?php include(ROOT_PATH . '/includes/public/errors.php') ?>
 		<input 
 		 type="text"

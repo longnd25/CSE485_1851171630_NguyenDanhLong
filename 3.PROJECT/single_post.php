@@ -13,7 +13,7 @@
 
 <?php include('includes/public/head_section.php'); ?>
 
-<title> <?php echo $post['title'] ?> | Diễn đàn</title>
+<title> <?php echo $post['title'] ?> | LifeBlog</title>
 
 </head>
 <body>
@@ -21,7 +21,7 @@
 <div class="container">
 
 	<!-- Navbar -->
-		<?php include( ROOT_PATH . '/includes/public/navbar.php'); ?>
+		<?php include( ROOT_PATH . '/navbar.php'); ?>
 	<!-- // Navbar -->
 	
 	<div class="content" >
@@ -44,12 +44,12 @@
 				/**
 				*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
 				*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-				
+				/*
 				var disqus_config = function () {
 				this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
 				this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 				};
-				
+				*/
 				(function() { // DON'T EDIT BELOW THIS LINE
 				var d = document, s = d.createElement('script');
 				s.src = 'https://demo-project-2.disqus.com/embed.js';
@@ -63,26 +63,22 @@
 			
 		</div>
 		<!-- // Page wrapper -->
-
-		<!-- post sidebar -->
 		<div class="post-sidebar">
 
-			<div class="card">
-				<div class="card-header">
-					<h2>Chủ đề</h2>
-				</div>
-				<div class="card-content">
-					<?php foreach ($topics as $topic): ?>
-						<a 
-							href="<?php echo BASE_URL . 'filtered_posts.php?topic=' . $topic['id'] ?>">
-							<?php echo $topic['name']; ?>
-						</a> 
-					<?php endforeach ?>
-				</div>
-			</div>
+<div class="card">
+	<div class="card-header">
+		<h2>Tools</h2>
+	</div>
+	<div class="card-content">
+	<!-- <li><a class="active" href="index.php">Home</a></li> -->
+	  <li><a href="forum.php">New</a></li>
+	  <li><a href="#topics">Topics</a></li>
+	  <li><a href="#about">About</a></li> 
+	</div>
+</div>
 
-		</div>
-		<!-- // post sidebar -->
+</div>
+
 
 	</div>
 

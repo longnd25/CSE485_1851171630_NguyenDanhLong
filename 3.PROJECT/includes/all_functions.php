@@ -60,9 +60,9 @@
 				(SELECT topic_id FROM post_topic WHERE post_id=$post_id LIMIT 1) LIMIT 1";
 
 		$result = mysqli_query($conn, $sql);
-		$topic = mysqli_fetch_assoc($result);
+		$topic_id = mysqli_fetch_assoc($result);
 
-		return $topic;
+		return $topic_id;
 	}
 
 	/**

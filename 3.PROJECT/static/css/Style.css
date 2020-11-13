@@ -1,0 +1,214 @@
+/* Header */
+
+header div.container{
+    padding: 0px;
+}
+
+div.headerlogo{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+div.nav-tog{
+    padding: 0px;
+    margin-bottom: 40px;
+    clear: both;
+    display: table;
+    width: auto;
+    border-bottom: solid black;
+    border-bottom-width:thin ;
+}
+
+div.nav-tog ul{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    list-style: none;
+    width: auto;
+}
+
+div.nav-tog ul li{
+    border-left-width: thin ;
+    border-left-style: dotted;
+    display: inline-block;
+    margin: 0px;
+    width: auto;
+}
+
+div.nav-tog ul li a{
+    line-height: 34px;
+    font-size: 16px;
+    padding: 8px 10px;
+    color:black;
+    text-decoration: none;
+}
+
+div.nav-tog ul li a:hover{
+    background-size: inherit;
+    background-color:#0000ff;
+    color: white;
+    word-wrap: inherit;
+}
+
+div.nav-tog ul ul li a:hover{
+    box-shadow: none;
+    color:#00008B;
+    background-color: white;
+    background-size: inherit;
+}
+
+div.nav-tog ul ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .5s;
+    background:  #0000ff;
+}
+
+div.nav-tog ul li:hover > ul{
+    top: 36px;
+    opacity: 1;
+    visibility: visible;
+}
+
+div.nav-tog ul ul li{
+    position: relative;
+    margin: 0px;
+    float: none;
+    display: list-item;
+    word-wrap: inherit;
+}
+
+div.nav-tog ul ul li a{
+    line-height: 36px;
+    color: white;
+}
+
+/* Header end */
+
+/* Section */
+
+section.main div.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+div.slides input{
+    display: none;
+}
+
+div.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+div.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+div.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+label.manual-btn{
+    border: 2px solid #0000ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+label.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+label.manual-btn:hover{
+    background: #0000ff;
+}
+
+#r1:checked ~ .first{
+    margin-left: 0;
+}
+
+#r2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#r3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#r4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* Section end */
+
+/* Extra Section */
+
+
+
+/* Extra Section end */
+
+/* Footer */
+
+footer {
+    font-family: poppins;
+    margin: 0px;
+    display: grid;
+    font-size: 14px;
+}
+
+.footer{
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     flex-flow: row wrap;
+     padding: 50px;
+     color: #ffffff;
+     background: #0000ff;
+ }
+
+ .footer > * {
+     flex: 1 100%;
+ }
+
+.footer-right{
+    display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     flex-flow: row wrap;
+}
+
+@media screen and (min-width:600px){
+    .footer-right > * {
+        flex:1 0px;
+    }
+}
+
+/* Footer end */

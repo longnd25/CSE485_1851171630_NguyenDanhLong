@@ -6,14 +6,14 @@
 
 <?php  include('includes/public/head_section.php'); ?>
 
-	<title>CSE.TLU | Sign in </title>
+	<title>CSE | Sign in </title>
 </head>
 <body>
 
 <div class="container">
 
 <!-- Navbar -->
-	<?php include( ROOT_PATH . '/includes/public/navbar.php'); ?>
+	<?php include( ROOT_PATH . '/includes/navbar.php'); ?>
 <!-- // Navbar -->
 
 
@@ -35,7 +35,6 @@
 		<button type="submit" class="btn" name="login_btn">Login</button>
 		<p>
 			Not yet a member? <a href="register.php">Sign up</a>
-			<li><a href="register.php">Join us</a></li>
 		</p>
 	</form>
 </div>

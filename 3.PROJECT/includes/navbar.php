@@ -4,9 +4,9 @@
 	</div>
 	<ul>
 	  <li><a class="active" href="index.php">Trang chủ</a></li>
-	  <li><a href="forum.php">Diễn đàn</a></li>
-	  <li><a href="#about">About</a></li>
-	  <li><a href="logout.php">Logout</a></li>
+	  <li><a href="login.php">Đăng nhập</a></li>
+	  <li><a href="register.php">Đăng ký</a></li>
+	  
 	  
 	</ul>
 </div>

@@ -91,7 +91,7 @@
 			  	$_SESSION['message'] = "You are now logged in";
 
 			  	// redirect to home page
-			  	header('location: index.php');
+			  	header('location: forum.php');
 			  	exit(0);
 			} else {
 				array_push($errors, 'Wrong credentials');
